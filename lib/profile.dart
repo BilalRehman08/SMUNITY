@@ -120,37 +120,53 @@ class _ProfileState extends State<Profile> {
                 height: 20,
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 30.0, right: 30),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    CircleAvatar(
-                      radius: 40.0,
-                      backgroundImage: NetworkImage(
-                          'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
-                      backgroundColor: Colors.transparent,
+                  padding: const EdgeInsets.only(left: 30.0, right: 30),
+                  child: Container(
+                    height: 80,
+                    child: ListView(
+                      // This next line does the trick.
+                      scrollDirection: Axis.horizontal,
+
+                      children: <Widget>[
+                        CircleAvatar(
+                          radius: 40.0,
+                          backgroundImage: NetworkImage(
+                              'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
+                          backgroundColor: Colors.transparent,
+                        ),
+                        CircleAvatar(
+                          radius: 40.0,
+                          backgroundImage: NetworkImage(
+                              'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
+                          backgroundColor: Colors.transparent,
+                        ),
+                        CircleAvatar(
+                          radius: 40.0,
+                          backgroundImage: NetworkImage(
+                              'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
+                          backgroundColor: Colors.transparent,
+                        ),
+                        CircleAvatar(
+                          radius: 40.0,
+                          backgroundImage: NetworkImage(
+                              'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
+                          backgroundColor: Colors.transparent,
+                        ),
+                        CircleAvatar(
+                          radius: 40.0,
+                          backgroundImage: NetworkImage(
+                              'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
+                          backgroundColor: Colors.transparent,
+                        ),
+                        CircleAvatar(
+                          radius: 40.0,
+                          backgroundImage: NetworkImage(
+                              'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
+                          backgroundColor: Colors.transparent,
+                        ),
+                      ],
                     ),
-                    CircleAvatar(
-                      radius: 40.0,
-                      backgroundImage: NetworkImage(
-                          'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
-                      backgroundColor: Colors.transparent,
-                    ),
-                    CircleAvatar(
-                      radius: 40.0,
-                      backgroundImage: NetworkImage(
-                          'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
-                      backgroundColor: Colors.transparent,
-                    ),
-                    CircleAvatar(
-                      radius: 40.0,
-                      backgroundImage: NetworkImage(
-                          'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
-                      backgroundColor: Colors.transparent,
-                    ),
-                  ],
-                ),
-              )
+                  ))
             ],
           ),
         ),
