@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smunity/interest.dart';
+import 'package:smunity/profile.dart';
 
 class Start extends StatefulWidget {
   @override
@@ -28,7 +29,12 @@ class _StartState extends State<Start> {
                       height: 45.0,
                       width: MediaQuery.of(context).size.width * 0.4,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Profile()));
+                        },
                         style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(30)),
