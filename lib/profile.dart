@@ -128,42 +128,14 @@ class _ProfileState extends State<Profile> {
                       scrollDirection: Axis.horizontal,
 
                       children: <Widget>[
-                        CircleAvatar(
-                          radius: 40.0,
-                          backgroundImage: NetworkImage(
-                              'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
-                          backgroundColor: Colors.transparent,
-                        ),
-                        CircleAvatar(
-                          radius: 40.0,
-                          backgroundImage: NetworkImage(
-                              'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
-                          backgroundColor: Colors.transparent,
-                        ),
-                        CircleAvatar(
-                          radius: 40.0,
-                          backgroundImage: NetworkImage(
-                              'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
-                          backgroundColor: Colors.transparent,
-                        ),
-                        CircleAvatar(
-                          radius: 40.0,
-                          backgroundImage: NetworkImage(
-                              'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
-                          backgroundColor: Colors.transparent,
-                        ),
-                        CircleAvatar(
-                          radius: 40.0,
-                          backgroundImage: NetworkImage(
-                              'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
-                          backgroundColor: Colors.transparent,
-                        ),
-                        CircleAvatar(
-                          radius: 40.0,
-                          backgroundImage: NetworkImage(
-                              'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
-                          backgroundColor: Colors.transparent,
-                        ),
+                        member(
+                            'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
+                        member(
+                            'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
+                        member(
+                            'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
+                        member(
+                            'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
                       ],
                     ),
                   ))
@@ -173,4 +145,12 @@ class _ProfileState extends State<Profile> {
       ),
     );
   }
+}
+
+Widget member(String community) {
+  return CircleAvatar(
+    radius: 40.0,
+    backgroundImage: NetworkImage(community),
+    backgroundColor: Colors.transparent,
+  );
 }

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:smunity/interest.dart';
 import 'package:smunity/profile.dart';
 
+import 'notifications.dart';
+
 class Start extends StatefulWidget {
   @override
   _StartState createState() => _StartState();
@@ -54,7 +56,7 @@ class _StartState extends State<Start> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => Interest()));
+                                  builder: (context) => Notifications()));
                         },
                         style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
