@@ -20,7 +20,7 @@ class _StartState extends State<Start> {
               height: MediaQuery.of(context).size.height * 1,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage("images/b1.png"),
+                  image: AssetImage("images/bg.jpeg"),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -56,7 +56,7 @@ class _StartState extends State<Start> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => Notifications()));
+                                  builder: (context) => Interest()));
                         },
                         style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
@@ -70,13 +70,18 @@ class _StartState extends State<Start> {
                     height: 8,
                   ),
                   TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Notifications()));
+                      },
                       child: Text(
                         "Skip",
                         style: TextStyle(
                           fontSize: 16,
                           decoration: TextDecoration.underline,
-                          color: Colors.black,
+                          color: Colors.white,
                         ),
                       ))
                 ],

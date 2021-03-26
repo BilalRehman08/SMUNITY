@@ -14,7 +14,12 @@ class _ProfileState extends State<Profile> {
       home: Scaffold(
         appBar: AppBar(
           leading: Icon(Icons.arrow_back),
-          actions: [Icon(Icons.settings)],
+          actions: [
+            Icon(
+              Icons.settings,
+              size: 30,
+            )
+          ],
         ),
         body: SingleChildScrollView(
           child: Column(
@@ -74,28 +79,70 @@ class _ProfileState extends State<Profile> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Material(
-                      borderRadius: BorderRadius.circular(30),
-                      elevation: 10,
-                      color: Colors.blue,
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        elevation: 20,
+                        primary: Color(0xffFDBB91),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30)),
+                      ),
+                      onPressed: () {},
                       child: Container(
                         height: 75,
-                        width: MediaQuery.of(context).size.width * 0.4,
+                        width: MediaQuery.of(context).size.width * 0.3,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(30)),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.add_box_rounded,
+                              size: 30,
+                              color: Colors.black,
+                            ),
+                            Text(
+                              "Smunity",
+                              style: TextStyle(
+                                fontSize: 20,
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
-                    Material(
-                      borderRadius: BorderRadius.circular(30),
-                      elevation: 10,
-                      color: Colors.blue,
-                      child: Container(
-                        height: 75,
-                        width: MediaQuery.of(context).size.width * 0.4,
-                        decoration: BoxDecoration(
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        elevation: 20,
+                        primary: Color(0xffFDBB91),
+                        shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30)),
                       ),
-                    )
+                      onPressed: () {},
+                      child: Container(
+                        height: 75,
+                        width: MediaQuery.of(context).size.width * 0.3,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(30)),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.add_box_rounded,
+                              size: 30,
+                              color: Colors.black,
+                            ),
+                            Text(
+                              "Company",
+                              style: TextStyle(
+                                fontSize: 20,
+                                color: Colors.black,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -128,6 +175,14 @@ class _ProfileState extends State<Profile> {
                       scrollDirection: Axis.horizontal,
 
                       children: <Widget>[
+                        member(
+                            'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
+                        member(
+                            'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
+                        member(
+                            'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
+                        member(
+                            'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
                         member(
                             'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
                         member(

@@ -115,7 +115,7 @@ class _InterestState extends State<Interest> {
                   style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30)),
-                    primary: Colors.black,
+                    primary: Color(0xFFFB8437),
                   ),
                   child: Text('SUBMIT', style: TextStyle(color: Colors.white)),
                 )),
@@ -135,8 +135,8 @@ Widget buttons(String name) {
         style: ElevatedButton.styleFrom(
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
-          primary: Colors.black,
+          primary: Color(0xffFDBB91),
         ),
-        child: Text(name, style: TextStyle(color: Colors.white)),
+        child: Text(name, style: TextStyle(color: Colors.black)),
       ));
 }

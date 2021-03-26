@@ -18,14 +18,14 @@ class _SearchState extends State<Search> {
               child: Container(
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(30),
-                color: Colors.blueGrey[100]),
+                color: Color(0xfff0e0d1)),
             height: 40,
             width: MediaQuery.of(context).size.width * 0.80,
             child: TextField(
               decoration: InputDecoration(
                 hintText: "Search Smunity",
                 enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.blueGrey[100], width: 0),
+                  borderSide: BorderSide(color: Color(0xffFFF5EF), width: 0),
                   borderRadius: BorderRadius.circular(30),
                 ),
               ),
