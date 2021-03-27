@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'login.dart';
+
 class Search extends StatefulWidget {
   @override
   _SearchState createState() => _SearchState();
@@ -13,7 +15,18 @@ class _SearchState extends State<Search> {
       theme: ThemeData(primaryColor: Colors.white),
       home: Scaffold(
         appBar: AppBar(
-          leading: Icon(Icons.arrow_back),
+          leading: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: Colors.white,
+              ),
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Login()));
+              },
+              child: Icon(
+                Icons.arrow_back,
+                color: Colors.black,
+              )),
           title: Center(
               child: Container(
             decoration: BoxDecoration(

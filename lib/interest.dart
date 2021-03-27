@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smunity/login.dart';
 import 'package:smunity/search.dart';
 
 class Interest extends StatefulWidget {
@@ -14,7 +15,18 @@ class _InterestState extends State<Interest> {
       theme: ThemeData(primaryColor: Colors.white),
       home: Scaffold(
         appBar: AppBar(
-          leading: Icon(Icons.arrow_back),
+          leading: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: Colors.white,
+              ),
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Login()));
+              },
+              child: Icon(
+                Icons.arrow_back,
+                color: Colors.black,
+              )),
           title: Center(
             child: Text(
               "INTERESTS",
