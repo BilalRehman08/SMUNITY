@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:smunity/eventpage.dart';
 import 'package:smunity/interest.dart';
 import 'package:smunity/profile.dart';
 import 'package:smunity/home.dart';
+import 'package:smunity/visitevent.dart';
 
+import 'addevent.dart';
 import 'login.dart';
 import 'notifications.dart';
 
@@ -34,8 +37,10 @@ class _StartState extends State<Start> {
                       width: MediaQuery.of(context).size.width * 0.4,
                       child: ElevatedButton(
                         onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => Login()));
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => AddEvent()));
                         },
                         style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
@@ -56,7 +61,7 @@ class _StartState extends State<Start> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => Interest()));
+                                  builder: (context) => VisitEvent()));
                         },
                         style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
@@ -74,7 +79,7 @@ class _StartState extends State<Start> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Notifications()));
+                                builder: (context) => EventPage()));
                       },
                       child: Text(
                         "Skip",
