@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smunity/eventdetails.dart';
 import 'package:smunity/eventpage.dart';
 import 'package:smunity/interest.dart';
 import 'package:smunity/profile.dart';
@@ -40,7 +41,7 @@ class _StartState extends State<Start> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => AddEvent()));
+                                  builder: (context) => EventDetails()));
                         },
                         style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
