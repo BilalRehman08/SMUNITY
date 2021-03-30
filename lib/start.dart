@@ -5,7 +5,9 @@ import 'package:smunity/eventpage.dart';
 import 'package:smunity/interest.dart';
 import 'package:smunity/profile.dart';
 import 'package:smunity/home.dart';
+import 'package:smunity/tagline.dart';
 import 'package:smunity/visitevent.dart';
+import 'package:smunity/website.dart';
 
 import 'addevent.dart';
 import 'login.dart';
@@ -42,7 +44,7 @@ class _StartState extends State<Start> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => EventDetails()));
+                                  builder: (context) => Tagline()));
                         },
                         style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
@@ -63,7 +65,7 @@ class _StartState extends State<Start> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => VisitEvent()));
+                                  builder: (context) => Website()));
                         },
                         style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
