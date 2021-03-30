@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smunity/addcompany.dart';
 import 'package:smunity/eventdetails.dart';
 import 'package:smunity/eventpage.dart';
 import 'package:smunity/interest.dart';
@@ -77,10 +78,8 @@ class _StartState extends State<Start> {
                   ),
                   TextButton(
                       onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => EventPage()));
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Company()));
                       },
                       child: Text(
                         "Skip",
