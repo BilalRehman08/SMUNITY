@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:smunity/addcompany.dart';
+import 'package:smunity/signup.dart';
 
 import 'events.dart';
 
@@ -126,8 +127,8 @@ class _LoginState extends State<Login> {
             children: [
               Text("Don't have an account? "),
               InkWell(
-                onTap: () => Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Company())),
+                onTap: () => Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => SignUp())),
                 child: Text(
                   "Sign Up",
                   style: TextStyle(color: Color(0xfffb8437)),

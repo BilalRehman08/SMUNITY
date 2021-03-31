@@ -5,11 +5,13 @@ import 'package:smunity/eventpage.dart';
 import 'package:smunity/interest.dart';
 import 'package:smunity/profile.dart';
 import 'package:smunity/home.dart';
+import 'package:smunity/signup.dart';
 import 'package:smunity/tagline.dart';
 import 'package:smunity/visitevent.dart';
 import 'package:smunity/website.dart';
 
 import 'addevent.dart';
+import 'events.dart';
 import 'login.dart';
 import 'notifications.dart';
 
@@ -41,10 +43,8 @@ class _StartState extends State<Start> {
                       width: MediaQuery.of(context).size.width * 0.4,
                       child: ElevatedButton(
                         onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => Tagline()));
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => Login()));
                         },
                         style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
@@ -65,7 +65,7 @@ class _StartState extends State<Start> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => Website()));
+                                  builder: (context) => SignUp()));
                         },
                         style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
@@ -80,8 +80,10 @@ class _StartState extends State<Start> {
                   ),
                   TextButton(
                       onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Company()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => MainWindow()));
                       },
                       child: Text(
                         "Skip",

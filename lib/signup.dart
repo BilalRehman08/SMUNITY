@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smunity/home.dart';
+import 'package:smunity/interest.dart';
 
 import 'events.dart';
 import 'login.dart';
@@ -155,7 +156,7 @@ class _SignUpState extends State<SignUp> {
               constraints: BoxConstraints.tightFor(width: 200, height: 50),
               child: ElevatedButton(
                 onPressed: () => Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => MainWindow())),
+                    MaterialPageRoute(builder: (context) => Interest())),
                 child: Text(
                   "Sign Up",
                   style: TextStyle(color: Colors.white, fontSize: 20),
