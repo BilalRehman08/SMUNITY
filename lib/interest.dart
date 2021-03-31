@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:smunity/events.dart';
 import 'package:smunity/login.dart';
+import 'package:smunity/navigation.dart';
 import 'package:smunity/search.dart';
 
 class Interest extends StatefulWidget {
@@ -123,7 +124,7 @@ class _InterestState extends State<Interest> {
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => MainWindow()));
+                        MaterialPageRoute(builder: (context) => Navigation()));
                   },
                   style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(

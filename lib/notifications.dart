@@ -17,12 +17,6 @@ class _NotificationsState extends State<Notifications> {
             "Notifications",
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
-          actions: [
-            Icon(
-              Icons.search,
-              size: 30,
-            )
-          ],
         ),
         body: Container(
           child: ListView(

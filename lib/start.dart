@@ -3,6 +3,7 @@ import 'package:smunity/addcompany.dart';
 import 'package:smunity/eventdetails.dart';
 import 'package:smunity/eventpage.dart';
 import 'package:smunity/interest.dart';
+import 'package:smunity/navigation.dart';
 import 'package:smunity/profile.dart';
 import 'package:smunity/home.dart';
 import 'package:smunity/signup.dart';
@@ -83,7 +84,7 @@ class _StartState extends State<Start> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => MainWindow()));
+                                builder: (context) => Navigation()));
                       },
                       child: Text(
                         "Skip",

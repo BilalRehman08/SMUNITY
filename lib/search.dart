@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smunity/events.dart';
+import 'package:smunity/navigation.dart';
 
 import 'login.dart';
 
@@ -22,7 +23,7 @@ class _SearchState extends State<Search> {
               ),
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => MainWindow()));
+                    MaterialPageRoute(builder: (context) => Navigation()));
               },
               child: Icon(
                 Icons.arrow_back,

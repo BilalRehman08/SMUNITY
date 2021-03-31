@@ -125,10 +125,8 @@ class _CompanyState extends State<Company> {
                     constraints:
                         BoxConstraints.tightFor(width: 200, height: 50),
                     child: ElevatedButton(
-                      onPressed: () => Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => MainWindow())),
+                      onPressed: () => Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Profile())),
                       child: Text(
                         "Register",
                         style: TextStyle(color: Colors.white, fontSize: 20),
