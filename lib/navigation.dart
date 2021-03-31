@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:smunity/events.dart';
 import 'package:smunity/interest.dart';
 import 'package:smunity/notifications.dart';
+import 'package:smunity/profile.dart';
 
 class Navigation extends StatefulWidget {
   @override
@@ -78,11 +79,11 @@ class _NavigationState extends State<Navigation> {
                         minWidth: 60,
                         onPressed: () {
                           setState(() {
-                            CurrentScreen = Notifications();
+                            CurrentScreen = Profile();
                             currentTab = 2;
                           });
                         },
-                        child: Icon(Icons.menu,
+                        child: Icon(Icons.person,
                             size: 32,
                             color: currentTab == 2
                                 ? Color(0xfffdbb91)

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:smunity/home.dart';
+import 'package:smunity/login.dart';
+import 'package:smunity/profile.dart';
 
 class Settings extends StatefulWidget {
   @override
@@ -18,14 +20,23 @@ class _SettingsState extends State<Settings> {
         title: Text(
           "SETTINGS",
           style: TextStyle(
+            color: Colors.black,
             fontWeight: FontWeight.w400,
           ),
         ),
         actions: [
-          Icon(Icons.close),
-          SizedBox(
-            width: 10,
-          )
+          ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: Colors.white,
+              ),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Profile()));
+              },
+              child: Icon(
+                Icons.cancel,
+                color: Colors.black,
+              )),
         ],
       ),
       body: SingleChildScrollView(
@@ -207,7 +218,7 @@ class _SettingsState extends State<Settings> {
                 ),
                 InkWell(
                   onTap: () => Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => HomeScreen())),
+                      MaterialPageRoute(builder: (context) => Login())),
                   child: Container(
                     height: MediaQuery.of(context).size.height * 0.07,
                     width: MediaQuery.of(context).size.width * 0.90,

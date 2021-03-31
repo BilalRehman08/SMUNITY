@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smunity/profile.dart';
 
 import 'events.dart';
 
@@ -18,13 +19,18 @@ class _WebsiteState extends State<Website> {
         home: Scaffold(
           appBar: AppBar(
             actions: [
-              Icon(
-                Icons.close,
-                color: Colors.black,
-              ),
-              SizedBox(
-                width: 10,
-              )
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.white,
+                  ),
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Profile()));
+                  },
+                  child: Icon(
+                    Icons.cancel,
+                    color: Colors.black,
+                  )),
             ],
           ),
           body: SingleChildScrollView(

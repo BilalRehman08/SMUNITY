@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:smunity/addcompany.dart';
+import 'package:smunity/settings.dart';
+import 'package:smunity/website.dart';
 
 class Profile extends StatefulWidget {
   @override
@@ -15,10 +18,19 @@ class _ProfileState extends State<Profile> {
         appBar: AppBar(
           leading: Icon(Icons.arrow_back),
           actions: [
-            Icon(
-              Icons.settings,
-              size: 30,
-            )
+            ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.white,
+                ),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Settings()));
+                },
+                child: Icon(
+                  Icons.settings,
+                  color: Colors.black,
+                  size: 30,
+                )),
           ],
         ),
         body: SingleChildScrollView(
@@ -82,11 +94,14 @@ class _ProfileState extends State<Profile> {
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         elevation: 20,
-                        primary: Color(0xffFDBB91),
+                        primary: Color(0xfffdbb91),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30)),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Company()));
+                      },
                       child: Container(
                         height: 75,
                         width: MediaQuery.of(context).size.width * 0.3,
@@ -114,11 +129,14 @@ class _ProfileState extends State<Profile> {
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         elevation: 20,
-                        primary: Color(0xffFDBB91),
+                        primary: Color(0xfffdbb91),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30)),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Website()));
+                      },
                       child: Container(
                         height: 75,
                         width: MediaQuery.of(context).size.width * 0.3,
