@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:smunity/events.dart';
 import 'package:smunity/settings.dart';
 
+import 'eventpage.dart';
 import 'login.dart';
 
 class EventDetails extends StatefulWidget {
@@ -96,11 +97,19 @@ class _EventDetailsState extends State<EventDetails> {
                       height: 5,
                     ),
                     Container(
-                      child: CircleAvatar(
-                        radius: 35.0,
-                        backgroundImage: NetworkImage(
-                            'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
-                        backgroundColor: Colors.transparent,
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => EventPage()));
+                        },
+                        child: CircleAvatar(
+                          radius: 35.0,
+                          backgroundImage: NetworkImage(
+                              'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
+                          backgroundColor: Colors.transparent,
+                        ),
                       ),
                     ),
                     Text(
@@ -164,8 +173,7 @@ Widget details(context) {
               ConstrainedBox(
                 constraints: BoxConstraints.tightFor(width: 80, height: 40),
                 child: ElevatedButton(
-                  onPressed: () => Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Settings())),
+                  onPressed: () {},
                   child: Text(
                     "Attend",
                     style: TextStyle(color: Colors.white, fontSize: 16),
