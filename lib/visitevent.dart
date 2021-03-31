@@ -146,7 +146,7 @@ class _VisitEventState extends State<VisitEvent> {
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
           child: Icon(
-            Icons.check,
+            Icons.house,
             color: Colors.white,
           ),
         ),
