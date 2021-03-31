@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smunity/events.dart';
 import 'package:smunity/settings.dart';
 
 import 'login.dart';
@@ -12,9 +13,7 @@ class _EventDetailsState extends State<EventDetails> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        primaryColor: Color(0xfff7e1c1),
-      ),
+      theme: ThemeData(primaryColor: Colors.white),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
@@ -23,8 +22,8 @@ class _EventDetailsState extends State<EventDetails> {
                 primary: Colors.white,
               ),
               onPressed: () {
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => Login()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MainWindow()));
               },
               child: Icon(
                 Icons.arrow_back,

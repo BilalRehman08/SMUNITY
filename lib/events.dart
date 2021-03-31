@@ -4,6 +4,8 @@ import 'package:smunity/events_model.dart';
 import 'package:smunity/search.dart';
 import 'package:smunity/settings.dart';
 
+import 'eventdetails.dart';
+
 class MainWindow extends StatefulWidget {
   @override
   _MainWindowState createState() => _MainWindowState();
@@ -179,7 +181,7 @@ Widget eventBox(context, String title) {
                             onPressed: () => Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => Settings())),
+                                    builder: (context) => EventDetails())),
                             child: Text(
                               "Attend",
                               style:

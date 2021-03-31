@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smunity/events.dart';
 
 import 'login.dart';
 
@@ -20,8 +21,8 @@ class _SearchState extends State<Search> {
                 primary: Colors.white,
               ),
               onPressed: () {
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => Login()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => MainWindow()));
               },
               child: Icon(
                 Icons.arrow_back,
