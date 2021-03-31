@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smunity/profile.dart';
 
 import 'events.dart';
 
@@ -18,13 +19,18 @@ class _TaglineState extends State<Tagline> {
         home: Scaffold(
           appBar: AppBar(
             actions: [
-              Icon(
-                Icons.close,
-                color: Colors.black,
-              ),
-              SizedBox(
-                width: 10,
-              )
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.white,
+                  ),
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Profile()));
+                  },
+                  child: Icon(
+                    Icons.cancel,
+                    color: Colors.black,
+                  )),
             ],
           ),
           body: SingleChildScrollView(
@@ -152,10 +158,8 @@ class _TaglineState extends State<Tagline> {
                     constraints:
                         BoxConstraints.tightFor(width: 200, height: 50),
                     child: ElevatedButton(
-                      onPressed: () => Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => MainWindow())),
+                      onPressed: () => Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Profile())),
                       child: Text(
                         "Register",
                         style: TextStyle(color: Colors.white, fontSize: 20),
