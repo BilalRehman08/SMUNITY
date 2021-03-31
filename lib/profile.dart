@@ -53,7 +53,7 @@ class _ProfileState extends State<Profile> {
                         child: CircleAvatar(
                           radius: 60.0,
                           backgroundImage: NetworkImage(
-                              'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
+                              'https://media-exp1.licdn.com/dms/image/C5103AQG6mIdAMBiEEg/profile-displayphoto-shrink_200_200/0/1546096893013?e=1622678400&v=beta&t=Zw0sKHGNTNoM2oZeLcLPCTJyToLakBlPsl5rwX9IDLk'),
                           backgroundColor: Colors.transparent,
                         ),
                       ),
@@ -206,12 +206,12 @@ class _ProfileState extends State<Profile> {
                           child: CircleAvatar(
                             radius: 30.0,
                             backgroundImage: NetworkImage(
-                                'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
+                                'https://media-exp1.licdn.com/dms/image/C4D0BAQEdDJGjAnTcdg/company-logo_200_200/0/1601506756802?e=1625097600&v=beta&t=dSKLSpEr_uhg8GEAF7aNbez1_5tvGZ9MpK45lT3T250'),
                             backgroundColor: Colors.transparent,
                           ),
                         ),
                         SizedBox(
-                          width: 10,
+                          width: 20,
                         ),
                         GestureDetector(
                           onTap: () {
@@ -223,7 +223,7 @@ class _ProfileState extends State<Profile> {
                           child: CircleAvatar(
                             radius: 30.0,
                             backgroundImage: NetworkImage(
-                                'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
+                                'https://www.gstatic.com/devrel-devsite/prod/vb236d130287e88277e2577fd354175933f40167baa8c8ed416d2ac3ecfb27ab2/developers/images/touchicon-180.png'),
                             backgroundColor: Colors.transparent,
                           ),
                         ),

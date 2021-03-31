@@ -17,5 +17,3 @@ Future<EventsModel> fetchAlbum() async {
     throw Exception('Failed to load album');
   }
 }
-
-

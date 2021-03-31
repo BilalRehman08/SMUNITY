@@ -79,6 +79,7 @@ class _SignUpState extends State<SignUp> {
                     height: 10,
                   ),
                   TextField(
+                    obscureText: true,
                     decoration: InputDecoration(
                         hintText: "Password",
                         hintStyle: TextStyle(color: Colors.grey, fontSize: 15)),

@@ -50,6 +50,7 @@ class _LoginState extends State<Login> {
                     height: 30,
                   ),
                   TextField(
+                    obscureText: true,
                     decoration: InputDecoration(
                         hintText: "Password",
                         hintStyle: TextStyle(color: Colors.grey, fontSize: 15)),

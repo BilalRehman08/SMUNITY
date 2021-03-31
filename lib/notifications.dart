@@ -23,85 +23,57 @@ class _NotificationsState extends State<Notifications> {
             children: [
               noti(
                   context,
-                  'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png',
-                  "Bilal Rehman commented on your photo"),
+                  'https://media-exp1.licdn.com/dms/image/C4D0BAQEdDJGjAnTcdg/company-logo_200_200/0/1601506756802?e=1625097600&v=beta&t=dSKLSpEr_uhg8GEAF7aNbez1_5tvGZ9MpK45lT3T250',
+                  "Developer Student Club Uit added an event about flutter"),
               SizedBox(
                 height: 10,
               ),
               noti(
                   context,
-                  'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png',
-                  "Bilal Rehman commented on your photo"),
+                  'https://www.gstatic.com/devrel-devsite/prod/vb236d130287e88277e2577fd354175933f40167baa8c8ed416d2ac3ecfb27ab2/developers/images/touchicon-180.png',
+                  "GDG Kolachi added an event about tensorflow "),
+              noti(
+                  context,
+                  'https://media-exp1.licdn.com/dms/image/C4D0BAQEyQoKUpy_F4A/company-logo_200_200/0/1604150099085?e=2159024400&v=beta&t=JCB-khook0gh4WY-NhNv8vcptf35VQAIuMryPha1Ne0',
+                  "Developer Student Club Comsats added an event about python"),
               SizedBox(
                 height: 10,
               ),
               noti(
                   context,
-                  'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png',
-                  "Bilal Rehman commented on your photo"),
+                  'https://www.gstatic.com/devrel-devsite/prod/vb236d130287e88277e2577fd354175933f40167baa8c8ed416d2ac3ecfb27ab2/developers/images/touchicon-180.png',
+                  "GDG Kolachi added an event about Machine Learning"),
               SizedBox(
                 height: 10,
               ),
               noti(
                   context,
-                  'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png',
-                  "Bilal Rehman commented on your photo"),
+                  'https://media-exp1.licdn.com/dms/image/C4D0BAQEdDJGjAnTcdg/company-logo_200_200/0/1601506756802?e=1625097600&v=beta&t=dSKLSpEr_uhg8GEAF7aNbez1_5tvGZ9MpK45lT3T250',
+                  "Developer Student Club Comsats added an event about web development"),
               SizedBox(
                 height: 10,
               ),
               noti(
                   context,
-                  'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png',
-                  "Bilal Rehman commented on your photo"),
+                  'https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_1080,q_100,w_1080/v1/gcs/platform-data-dsc/chapter_banners/DSC-NUST-logo.png',
+                  "Developer Student Club Comsats added an event about flutter"),
               SizedBox(
                 height: 10,
               ),
               noti(
                   context,
-                  'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png',
-                  "Bilal Rehman commented on your photo"),
+                  'https://media-exp1.licdn.com/dms/image/C4D0BAQEdDJGjAnTcdg/company-logo_200_200/0/1601506756802?e=1625097600&v=beta&t=dSKLSpEr_uhg8GEAF7aNbez1_5tvGZ9MpK45lT3T250',
+                  "Developer Student Club Nust added an event about data science"),
+              SizedBox(
+                height: 10,
+              ),
               SizedBox(
                 height: 10,
               ),
               noti(
                   context,
-                  'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png',
-                  "Bilal Rehman commented on your photo"),
-              SizedBox(
-                height: 10,
-              ),
-              noti(
-                  context,
-                  'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png',
-                  "Bilal Rehman commented on your photo"),
-              SizedBox(
-                height: 10,
-              ),
-              noti(
-                  context,
-                  'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png',
-                  "Bilal Rehman commented on your photo"),
-              SizedBox(
-                height: 10,
-              ),
-              noti(
-                  context,
-                  'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png',
-                  "Bilal Rehman commented on your photo"),
-              SizedBox(
-                height: 10,
-              ),
-              noti(
-                  context,
-                  'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png',
-                  "Bilal Rehman commented on your photo"),
-              SizedBox(
-                height: 10,
-              ),
-              noti(
-                  context,
-                  'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png',
-                  "Bilal Rehman commented on your photo"),
+                  'https://www.gstatic.com/devrel-devsite/prod/vb236d130287e88277e2577fd354175933f40167baa8c8ed416d2ac3ecfb27ab2/developers/images/touchicon-180.png',
+                  "GDG Kolachi added an event about Data Structure"),
               SizedBox(
                 height: 10,
               ),

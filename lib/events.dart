@@ -63,23 +63,53 @@ class _MainWindowState extends State<MainWindow> {
                     SizedBox(
                       height: 15,
                     ),
-                    eventBox(context, "${snapshot.data.title}"),
+                    eventBox(
+                        context,
+                        "Road Map to flutter",
+                        "DSC UIT",
+                        "28-oct-2020",
+                        "6 to 8pm",
+                        'https://media-exp1.licdn.com/dms/image/C4D0BAQEdDJGjAnTcdg/company-logo_200_200/0/1601506756802?e=1625097600&v=beta&t=dSKLSpEr_uhg8GEAF7aNbez1_5tvGZ9MpK45lT3T250'),
                     SizedBox(
                       height: 15,
                     ),
-                    eventBox(context, "${snapshot.data.title}"),
+                    eventBox(
+                        context,
+                        "Intro to Data Science",
+                        "DSC Comsats",
+                        "12-nov-2020",
+                        "8 to 10pm",
+                        'https://media-exp1.licdn.com/dms/image/C4D0BAQEyQoKUpy_F4A/company-logo_200_200/0/1604150099085?e=2159024400&v=beta&t=JCB-khook0gh4WY-NhNv8vcptf35VQAIuMryPha1Ne0'),
                     SizedBox(
                       height: 15,
                     ),
-                    eventBox(context, "${snapshot.data.title}"),
+                    eventBox(
+                        context,
+                        "Crash Course on TensorFlow",
+                        "DSC Nust",
+                        "15-dec-2020",
+                        "2 to 4pm",
+                        'https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_1080,q_100,w_1080/v1/gcs/platform-data-dsc/chapter_banners/DSC-NUST-logo.png'),
                     SizedBox(
                       height: 15,
                     ),
-                    eventBox(context, "${snapshot.data.title}"),
+                    eventBox(
+                        context,
+                        "30 days of Artificial Intelligence",
+                        "DSC Fast",
+                        "1-jan-2021",
+                        "7 to 9pm",
+                        'https://www.gstatic.com/devrel-devsite/prod/vb236d130287e88277e2577fd354175933f40167baa8c8ed416d2ac3ecfb27ab2/developers/images/touchicon-180.png'),
                     SizedBox(
                       height: 15,
                     ),
-                    eventBox(context, "${snapshot.data.title}"),
+                    eventBox(
+                        context,
+                        "Road Map to Machine Learning",
+                        "DSC UIT",
+                        "12-march-2021",
+                        "6 to 8pm",
+                        'https://media-exp1.licdn.com/dms/image/C4D0BAQEdDJGjAnTcdg/company-logo_200_200/0/1601506756802?e=1625097600&v=beta&t=dSKLSpEr_uhg8GEAF7aNbez1_5tvGZ9MpK45lT3T250'),
                     SizedBox(
                       height: 15,
                     ),
@@ -98,7 +128,8 @@ class _MainWindowState extends State<MainWindow> {
   }
 }
 
-Widget eventBox(context, String title) {
+Widget eventBox(context, String title, String texttt, String datee,
+    String timeee, String imagee) {
   return Center(
     child: Container(
       height: MediaQuery.of(context).size.height * 0.18,
@@ -130,7 +161,7 @@ Widget eventBox(context, String title) {
                       height: 10,
                     ),
                     Text(
-                      "DSC UIT",
+                      texttt,
                       style: TextStyle(fontSize: 15, color: Colors.orange),
                     ),
                     Row(
@@ -142,7 +173,7 @@ Widget eventBox(context, String title) {
                               height: 5,
                             ),
                             Text(
-                              "Oct-19th-2020",
+                              datee,
                               style:
                                   TextStyle(fontSize: 10, color: Colors.grey),
                             ),
@@ -150,7 +181,7 @@ Widget eventBox(context, String title) {
                               height: 10,
                             ),
                             Text(
-                              "(7:00 pm to 8:00 pm)",
+                              timeee,
                               style:
                                   TextStyle(fontSize: 10, color: Colors.grey),
                             )
@@ -183,12 +214,14 @@ Widget eventBox(context, String title) {
                   ],
                 ),
                 Container(
+                  decoration:
+                      BoxDecoration(borderRadius: BorderRadius.circular(50)),
                   padding: EdgeInsets.all(2),
                   height: MediaQuery.of(context).size.height * 0.16,
                   width: MediaQuery.of(context).size.width * 0.25,
-                  child: Image.asset(
-                    'images/bg.jpeg',
-                    fit: BoxFit.cover,
+                  child: CircleAvatar(
+                    backgroundImage: NetworkImage(imagee),
+                    backgroundColor: Colors.transparent,
                   ),
                 )
               ],
