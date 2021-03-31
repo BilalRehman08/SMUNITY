@@ -32,7 +32,7 @@ class _AddEventState extends State<AddEvent> {
                       child: CircleAvatar(
                         radius: 35.0,
                         backgroundImage: NetworkImage(
-                            'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
+                            'https://media-exp1.licdn.com/dms/image/C4D0BAQEdDJGjAnTcdg/company-logo_200_200/0/1601506756802?e=1625097600&v=beta&t=dSKLSpEr_uhg8GEAF7aNbez1_5tvGZ9MpK45lT3T250'),
                         backgroundColor: Colors.transparent,
                       ),
                     ),
@@ -64,7 +64,7 @@ class _AddEventState extends State<AddEvent> {
                     Padding(
                       padding: EdgeInsets.only(left: 20, right: 20),
                       child: Text(
-                        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,",
+                        "Helping students bridge the gap between theory and practice. DSC UIT is a university-based community group for students interested in Google developer technologies. DSC helps students to grow their knowledge in a learning environment & develop solutions.",
                         style: TextStyle(fontSize: 15),
                       ),
                     ),
@@ -90,7 +90,7 @@ class _AddEventState extends State<AddEvent> {
                                 child: CircleAvatar(
                                   radius: 25.0,
                                   backgroundImage: NetworkImage(
-                                      'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
+                                      'https://media-exp1.licdn.com/dms/image/C4D03AQGHOAmEAY2VIQ/profile-displayphoto-shrink_200_200/0/1608161214297?e=1622678400&v=beta&t=6kPCK11aCTnQKk-hhHbqzgxNl6d_0ZgScwBUetl7BxE'),
                                   backgroundColor: Colors.transparent,
                                 ),
                               ),
@@ -107,15 +107,15 @@ class _AddEventState extends State<AddEvent> {
                                 child: CircleAvatar(
                                   radius: 25.0,
                                   backgroundImage: NetworkImage(
-                                      'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
+                                      'https://media-exp1.licdn.com/dms/image/C5103AQG6mIdAMBiEEg/profile-displayphoto-shrink_200_200/0/1546096893013?e=1622678400&v=beta&t=Zw0sKHGNTNoM2oZeLcLPCTJyToLakBlPsl5rwX9IDLk'),
                                   backgroundColor: Colors.transparent,
                                 ),
                               ),
                               SizedBox(
                                 height: 5,
                               ),
-                              Text("Raheel Siddiqui"),
-                              Text("DSC Lead"),
+                              Text("Bilal Rehman"),
+                              Text("Development Lead"),
                             ],
                           ),
                           Column(
@@ -124,15 +124,15 @@ class _AddEventState extends State<AddEvent> {
                                 child: CircleAvatar(
                                   radius: 25.0,
                                   backgroundImage: NetworkImage(
-                                      'https://www.pngitem.com/pimgs/m/391-3918613_personal-service-platform-person-icon-circle-png-transparent.png'),
+                                      'https://media-exp1.licdn.com/dms/image/C4D35AQGDwgj-wv5lRA/profile-framedphoto-shrink_200_200/0/1595619622476?e=1617296400&v=beta&t=EpUu4TY0X2P3IYQKXJt14ABtl1YjOEILtbFEatR9il4'),
                                   backgroundColor: Colors.transparent,
                                 ),
                               ),
                               SizedBox(
                                 height: 5,
                               ),
-                              Text("Raheel Siddiqui"),
-                              Text("DSC Lead"),
+                              Text("Syed Bilal"),
+                              Text("Development Lead"),
                             ],
                           ),
                         ],

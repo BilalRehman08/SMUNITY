@@ -60,7 +60,7 @@ class _EventDetailsState extends State<EventDetails> {
                     Padding(
                       padding: EdgeInsets.only(left: 20, right: 20),
                       child: Text(
-                        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,",
+                        "Helping students bridge the gap between theory and practice. DSC UIT is a university-based community group for students interested in Google developer technologies. DSC helps students to grow their knowledge in a learning environment & develop solutions.",
                         style: TextStyle(fontSize: 15),
                       ),
                     ),
