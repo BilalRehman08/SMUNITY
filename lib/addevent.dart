@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smunity/tagline.dart';
 
 class AddEvent extends StatefulWidget {
   @override
@@ -144,7 +145,10 @@ class _AddEventState extends State<AddEvent> {
           ),
         ),
         floatingActionButton: FloatingActionButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => Tagline()));
+          },
           child: Icon(
             Icons.add,
             color: Colors.white,
