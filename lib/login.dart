@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:smunity/addcompany.dart';
+import 'package:smunity/navigation.dart';
 import 'package:smunity/signup.dart';
 
 import 'events.dart';
@@ -73,7 +74,7 @@ class _LoginState extends State<Login> {
                       onPressed: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => MainWindow())),
+                              builder: (context) => Navigation())),
                       child: Text(
                         "Login",
                         style: TextStyle(color: Colors.white, fontSize: 20),
